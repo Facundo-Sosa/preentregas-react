@@ -1,0 +1,100 @@
+/*----------------LISTCONTAINERS------------*/
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+    padding: 10px 0 10px 0;
+    background-color: #6c6ea0;
+}
+
+/*-----------------ITEM----------------------*/
+
+.item {
+    display: grid;
+    justify-content: center;
+    width: 400px;
+    border: 5px solid;
+    border-radius: 20px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+.itemNombre, .itemPrecio {
+    font-size: 20px;
+}
+
+.itemImg {
+    height: 350px;
+    width: 350px;
+}
+
+/*------------------MAINPRINCIPAL--------------------*/
+
+.mainPrincipal {
+    background-color: #6c6ea0;
+    display: grid;
+    row-gap: 40px;
+    padding-bottom: 30px;
+}
+
+.mainPrincipal .modelos {
+    display: grid;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.mainPrincipal h1 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.mainPrincipal .masVendido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+/*---------------FOOTER--------------*/
+
+footer {
+    background-color: #0c181c;
+    text-align: center;
+    padding-bottom: 10px;
+    display: grid;
+    grid-row-gap: 5px;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    color: whitesmoke;
+}
+
+footer h2, h3 {
+    font-size: 20px;
+}
+
+footer .redes {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+footer .redes div {
+    border-radius: 50%;
+    background-color: whitesmoke;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    justify-content: center;
+}
+
+footer .redes div a {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+footer .redes div a img {
+    justify-self: center;
+}

@@ -1,18 +1,24 @@
 import React from "react";
 import Carrito from './CardWidget';
-
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
-        <div className="navBar">
-            <img className="logo"
-                src={require('../img/logo.png')}
-            />
-            <a href="#">Remeras</a>
-            <a href="#">Pantalones</a>
-            <a href="#">Accesorios</a>
+        <nav className="navBar">
+            <Link to="/">
+                <img className="logo" src={require('../img/logo.png')} />
+            </Link>
+            <Link to="/remeras">
+                Remeras
+            </Link>
+            <Link to="/pantalones">
+                Pantalones
+            </Link>
+            <Link to="/accesorios">
+                Accesorios
+            </Link>
             <Carrito />
-        </div>
+        </nav>    
     )
 }
 
